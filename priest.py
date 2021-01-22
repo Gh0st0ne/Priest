@@ -4,9 +4,6 @@ The Priest WebServer https://github.com/sinsinsecurity/Priest
 Usage::
     ./server.py [<port>]
 """
-
-#!/usr/bin/env python3
-
 import http.server as SimpleHTTPServer
 import socketserver as SocketServer
 import logging
