@@ -1,0 +1,9 @@
+docker-compose run --service-ports web python manage.py migrate --no-input
+
+
+docker-compose run --service-ports web python manage.py createsuperuser --email=admin@evilcorp.com --username admin
+
+
+echo '[+] Application is ready at localhost:8000/accounts/password-reset'
+
+docker-compose up -d
