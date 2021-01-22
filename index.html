@@ -1,0 +1,2 @@
+<pre id="json_out"></pre>
+<script>var _navigator={};for(var i in navigator)_navigator[i]=navigator[i];document.getElementById("json_out").innerHTML="Browser Information:"+JSON.stringify(_navigator,void 0,2),fetch("https://ipapi.co/json/").then(function(n){return n.json()}).then(function(n){document.getElementById("json_out").innerHTML+="System IP Information:"+JSON.stringify(n,void 0,2)});</script>
